@@ -1,0 +1,62 @@
+$color1:red;
+$color2:black;
+.form-group{
+    padding: 20px;
+}
+.formu h1{
+    display: flex;
+    color: $color2;
+    margin: 15px;
+}
+.form-container{
+    font-weight: bold;
+    color: $color2;
+}
+.formu h2 {
+    display:flex;
+    align-items: center;
+    margin:10px;
+    padding:10px;
+    font-weight: bold;
+    color: $color2;
+}
+.maps{
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px $color1;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+}
+.contactos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+}
+.headercontactos{
+    grid-area: header;
+}
+.maincontactos{
+    grid-area: main;
+}
+.footercontactos{
+    grid-area: footer;
+}
+@media screen and (max-width:750px){
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+    }
+    .formu{
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

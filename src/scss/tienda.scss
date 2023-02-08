@@ -1,0 +1,45 @@
+$color1:red;
+$color2:black;
+$color3: white;
+@mixin boton ($colorbot, $backcolor){
+    padding: 10px;
+    color: $colorbot;
+    background-color:$backcolor;
+    border: none;
+}
+.inicio img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.productoos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    color: $color2;
+}
+.titulo h1{
+    margin: 50px;
+    text-align: center;
+    color: $color2;
+}
+.pro{
+    padding: 15px;
+    border-radius: 20px;
+}
+.pro p{
+    font-size: 30px;
+    margin: 5px;
+}
+.pro:hover{
+    box-shadow: 0px 0px 15px $color1;
+    transition: .3s;
+}
+.pro img{
+    width: 300px;
+    height: 400px;
+}
+button{ 
+   @include boton($color3, $color1)
+}

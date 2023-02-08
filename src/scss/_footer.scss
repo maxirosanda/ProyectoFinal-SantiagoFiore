@@ -1,0 +1,23 @@
+$color1:red;
+$color2:black;
+$color3: white;
+footer{
+    background: linear-gradient(to right, $color1 , $color2 60% );
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    h4{
+        color: $color3;
+        text-align:center;
+    }
+
+ .redes ul a{
+    align-content: center;
+    justify-content: space-between;
+    color: $color3;
+    font-size: 30px;
+    margin: 5px;
+    }
+}

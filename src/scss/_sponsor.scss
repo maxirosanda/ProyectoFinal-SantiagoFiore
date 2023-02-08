@@ -1,0 +1,33 @@
+$color1:red;
+.spo1 h1{
+    margin-top: 15px;
+    text-align: center;
+}
+.sponsor{
+    margin:20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+.sponsor .imag{
+    border: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px $color1;
+    width: 500px;
+    height: 500px;
+}
+@media screen and (max-width:820px){
+    .maincontactos{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+    } 
+    .maincontactos img{
+        margin: 0px;
+        padding: 0px;
+    }
+}

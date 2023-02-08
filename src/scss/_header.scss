@@ -1,0 +1,38 @@
+$color1:red;
+$color2:black;
+$color3: white;
+header{
+    display:flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background: linear-gradient(to right, $color1 , $color2 60% ); 
+    align-items: center;
+    padding: 7px;
+}
+.container-fluid img{
+    height: 70px;
+    margin-right: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+}
+.tittleheader{
+    color: white;
+}
+nav a{
+   text-decoration: none; 
+   color: $color3;
+   padding: 20px;
+   margin-left: 25px;
+}
+.butn:hover{
+    background-color:$color1;
+    border-radius: 10px;
+    border: 3px solid $color3;
+    transition: .1s;
+}
